@@ -6,10 +6,10 @@ If you have OpenCV installed locally on your machine, you can run Python program
 from the terminal, as specified in each sample program.
 
 
-## Docker 
+## Docker
 
 Once you have Docker Desktop running on your machine, you can use Docker to run given
-Python programs that use OpenCV. 
+Python programs that use OpenCV.
 
 ### Building
 
@@ -23,7 +23,7 @@ This creates a new container called `opencv`.
 
 To run each program in a docker container, run the run script corresponding to your OS. For example, in Mac, you would run:
 
-`sh dockerrun_macOS.sh`
+`sh docker/run_macOS.sh`
 
 Now you can navigate to `src` directory and run each Python programs inside your container.
 

@@ -40,22 +40,22 @@ canvas = np.zeros((300, 300, 3), dtype="uint8")
 white = (255, 255, 255)
 
 for r in range(0, 175, 25):
-	cv2.circle(canvas, (centerX, centerY), r, white)
+    cv2.circle(canvas, (centerX, centerY), r, white)
 
 
 cv2.imwrite("images/drawing/Canvas1.png", canvas)
 
 # Let's go crazy and draw 25 random circles
 for i in range(0, 25):
- 	# randomly generate a radius size between 5 and 200,
-	# generate a random color, and then pick a random
-	# point on our canvas where the circle will be drawn
-	radius = np.random.randint(5, high = 200)
-	color = np.random.randint(0, high = 256, size = (3,)).tolist()
-	pt = np.random.randint(0, high = 300, size = (2,))
+    # randomly generate a radius size between 5 and 200,
+    # generate a random color, and then pick a random
+    # point on our canvas where the circle will be drawn
+    radius = np.random.randint(5, high=200)
+    color = np.random.randint(0, high=256, size=(3,)).tolist()
+    pt = np.random.randint(0, high=300, size=(2,))
 
-	# draw our random circle
-	cv2.circle(canvas, tuple(pt), radius, color, -1)
+    # draw our random circle
+    cv2.circle(canvas, tuple(pt), radius, color, -1)
 
 # Show our masterpiece
 cv2.imwrite("images/drawing/Canvas2.png", canvas)
