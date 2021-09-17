@@ -13,9 +13,9 @@ Python programs that use OpenCV.
 
 ### Building
 
-First navigate to `docker` subdirectory. Then, run the build script that correspond to your OS. For example, in Mac, you would run:
+First, inside `activity7` directory, run the build script inside `docker` subdirectory, that correspond to your OS. For example, in Mac, you would run:
 
-`sh build_macOS.sh`
+`sh docker/build_macOS.sh`
 
 This creates a new container called `opencv`.
 
@@ -23,7 +23,7 @@ This creates a new container called `opencv`.
 
 To run each program in a docker container, run the run script corresponding to your OS. For example, in Mac, you would run:
 
-`sh run_macOS.sh`
+`sh dockerrun_macOS.sh`
 
 Now you can navigate to `src` directory and run each Python programs inside your container.
 
