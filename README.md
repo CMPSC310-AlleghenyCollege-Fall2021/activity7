@@ -17,6 +17,10 @@ First, inside `activity7` directory, run the build script inside `docker` subdir
 
 `sh docker/build_macOS.sh`
 
+Or, you can run:
+
+`docker build -t opencv .`
+
 This creates a new container called `opencv`.
 
 ### Running
@@ -25,7 +29,9 @@ To run each program in a docker container, run the run script corresponding to y
 
 `sh docker/run_macOS.sh`
 
-Now you can navigate to `src` directory and run each Python programs inside your container.
+Or, you can run `docker run --rm -it -v $PWD:/root opencv`
+
+Now you are inside the container and you can navigate to `src` directory and run each Python programs inside your container.
 
 ### Output
 
